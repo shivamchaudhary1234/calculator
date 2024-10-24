@@ -25,6 +25,9 @@ int square(int i){
 int cube(int i){
 	return(i*i*i)
 }
+float inv(int i){
+	return(1/i)
+}
 int main() {
     int a, b;
     char operation;
@@ -79,7 +82,7 @@ int main() {
             case 'i':
                 printf("Enter an integer: ");
                 scanf("%d", &a);
-                printf("Will be implemented soon...\n");
+                printf("result is %d\n",inv(a));
                 break;
             default:
                 printf("Invalid operation. Please try again.\n");
